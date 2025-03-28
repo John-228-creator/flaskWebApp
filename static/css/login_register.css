@@ -1,0 +1,60 @@
+h1{
+    color: #A0B8D9;
+    font-style: italic;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: red;
+    font-style: italic;
+}
+body {
+    background-color: #2C3E50;
+    margin: 20px;
+    align-content: center;
+}
+
+.tableButton {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+form {
+    border: none;
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+}
+
+form div {
+    margin: 10px;
+}
+
+form button {
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #3498DB;
+    color: white;
+}
+
+form label {
+    color: #93a8c8
+}
+
+form button:hover {
+    background-color: #2980B9;
+}
+
+.inputPassword {
+    margin-bottom: 30px;
+}
+
