@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/expenses.css') }}">
+{% endblock %}
+
+{% block body %}
+    <h1>Your Table of Expenses</h1>
+
+    <table class="tableSum">
+        <tr>
+            <th>Food</th>
+            <th>Fun</th>
+            <th>School</th>
+            <th>Personal</th>
+        </tr>
+        <tr>
+            <td>{{user.food}}</td>
+            <td>{{user.fun}}</td>
+            <td>{{user.school}}</td>
+            <td>{{user.personal}}</td>
+        </tr>
+    </table>
+
+    <h2 class="addExph2">Add New Expenses</h2>
+
+    <form method="POST" action="{{ url_for('expenses', name = user.name) }}">
+        <table class="tableAddExpenses">
+            <tr>
+                <th>Food</th>
+                <th>Fun</th>
+                <th>School</th>
+                <th>Personal</th>
+            </tr>
+            <tr>
+                <td><input type="number" name="food"></td>
+                <td><input type="number" name="fun"></td>
+                <td><input type="number" name="school"></td>
+                <td><input type="number" name="personal"></td>
+            </tr>
+        </table>
+        <button class="tableButton" name="action" type="submit" value="save">Submit</button>
+        <button class="tableButton" name="action" type="submit" value="reset">Reset</button>
+    </form>
+
+{% endblock %}

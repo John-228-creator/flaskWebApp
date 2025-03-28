@@ -1,0 +1,65 @@
+h1, h2 {
+    color: red;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.addExph2 {
+    margin-top: 100px;
+}
+
+body {
+    background-color: aqua;
+    margin: 20px;
+    text-align: center;
+}
+
+.tableSum, .tableAddExpenses {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+
+.tableSum th, .tableAddExpenses th {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    height: 40px;
+}
+
+.tableSum td, .tableAddExpenses td {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    height: 30px;
+}
+
+
+.tableAddExpenses td input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.tableButton {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+    background-color: #812bff;
+    color: white;
+    font-size: 18px;
+}
+
+.tableButton:hover {
+    background-color: #5a1ebf;
+}
